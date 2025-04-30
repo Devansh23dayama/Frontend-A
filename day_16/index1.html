@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      body {
+        background-color: #1e1e1e;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        width: 300px;
+        border-radius: 20px;
+        background-color: #111;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-header {
+        background-color: #d90429;
+        height: 100px;
+        position: relative;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 4px solid #111;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .card-body {
+        padding: 60px 20px 20px;
+        text-align: center;
+      }
+
+      .name {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .followers {
+        margin: 5px 0;
+        font-size: 0.9em;
+        color: #ccc;
+      }
+
+      .follow-btn {
+        margin: 10px 0;
+        background: none;
+        border: 1px solid #fff;
+        padding: 5px 15px;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+        font-size: 0.85em;
+      }
+
+      .skills {
+        text-align: left;
+        padding: 0 20px 20px;
+      }
+
+      .skill {
+        margin: 10px 0;
+      }
+
+      .skill-name {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85em;
+        margin-bottom: 5px;
+      }
+
+      .progress-bar {
+        background-color: #333;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .progress {
+        height: 10px;
+        border-radius: 10px;
+      }
+
+      .html {
+        background-color: white;
+        width: 95%;
+      }
+
+      .css {
+        background-color: #e63946;
+        width: 90%;
+      }
+
+      .js {
+        background-color: #fca311;
+        width: 75%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img
+          src="https://i.ibb.co/p2fQ1F4/einstein.png"
+          alt="Profile"
+          class="profile-img"
+        />
+      </div>
+      <div class="card-body">
+        <div class="name">Albert Feynman</div>
+        <div class="followers">👥 90</div>
+        <button class="follow-btn">Follow 👤</button>
+
+        <div class="stats">
+          <div>🖋 29</div>
+          <div>📁 0</div>
+          <div>💬 0</div>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">HTML5 <span>95%</span></div>
+            <div class="progress-bar">
+              <div class="progress html"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS3 <span>90%</span></div>
+            <div class="progress-bar">
+              <div class="progress css"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JAVASCRIPT <span>75%</span></div>
+            <div class="progress-bar">
+              <div class="progress js"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
