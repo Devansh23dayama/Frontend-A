@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css&quot;
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .parent {
+      position: relative;
+      background: linear-gradient(
+        rgba(208, 28, 28, 0.727),
+        rgba(239, 69, 69, 0.682)
+      );
+      height: 100vh;
+    }
+    .whatsapp {
+      position: absolute;
+      bottom: 18px;
+      right: 18px;
+      background-color: rgb(37, 177, 37);
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+    .whatsapp:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    .whatsapp i {
+      color: white;
+      font-size: 40px;
+    }
+  </style>
+
+  <body>
+    <div class="parent">
+      <div class="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </body>
+</html>

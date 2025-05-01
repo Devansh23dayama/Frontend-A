@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    .parent {
+      background: url("https://images.unsplash.com/photo-1689344683256-40b734b440e7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2xhc3MlMjBlZmZlY3R8ZW58MHx8MHx8fDA%3D")
+        no-repeat center/cover;
+      padding: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .glasstextparent {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      color: #6a1414;
+      padding: 20px 40px;
+      border-radius: 10px;
+      height: 50vh;
+      width: 25vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    .name {
+      background: rgba(7, 7, 7, 0.2);
+      backdrop-filter: blur(1);
+      color: #143e6a;
+      padding: 10px 40px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .email {
+      background: rgba(7, 7, 7, 0.2);
+      backdrop-filter: blur(1);
+      color: #14436a;
+      padding: 10px 40px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .password {
+      background: rgba(7, 7, 7, 0.2);
+      backdrop-filter: blur(1);
+      color: #0e536c;
+      padding: 10px 40px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .icon {
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: -30px;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="glasstextparent">
+        <div class="icon">&#128100;</div>
+        <div class="name">name</div>
+        <div class="email">email</div>
+        <div class="password">password</div>
+      </div>
+    </div>
+  </body>
+</html>
