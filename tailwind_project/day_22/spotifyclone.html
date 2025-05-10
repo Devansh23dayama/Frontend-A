@@ -36,7 +36,7 @@
       <div class="flex flex-1 justify-center items-center gap-7">
         <!-- home -->
         <span
-          class="bg-[#121212] w-10 h-10 flex justify-center items-center rounded-full"
+          class="bg-[#121212] w-10 h-10 flex justify-center items-center rounded-full hover:scale-105"
         >
           <i class="fas fa-home text-xl text-white"></i
         ></span>
@@ -86,9 +86,9 @@
     <!-- mainbody -->
     <div class="flex flex-1 gap-2 mt-2 mb-2">
       <!-- leftsidebar -->
-      <div class="bg-[#121212] w-82 rounded-2xl ml-2">
+      <div class="bg-[#121212] w-82 rounded-2xl ml-2 ">
         <!-- create -->
-        <div class="h-14 text-white flex justify-evenly items-center">
+        <div class="h-14 text-white flex justify-evenly items-center position-fixed ">
           <b>Your Library</b>
           <div
             class="bg-[#1e1e1e] text-white px-3 py-2 rounded-full ml-15 hover:scale-105"
@@ -96,7 +96,7 @@
             <i class="fa-solid fa-plus text-white"></i>
             <button class="">Create</button>
           </div>
-          <button class="bg-[#1e1e1e] rounded-full p-2 hover:scale-105"><i
+          <button class="hover:bg-[#1e1e1e] rounded-full p-2 hover:scale-105 text-sm"><i
             class="fa-solid fa-up-right-and-down-left-from-center ml-1 hover:scale-105"
           ></i></button>
         </div>
@@ -114,18 +114,271 @@
           </div>
         </div>
         <!-- search button -->
-        <div class="flex justify-between p-2">
-          <div><i class="fa-solid fa-magnifying-glass text-white"></i></div>
+        <div class="flex justify-between p-2 ">
+          <div><i class="fa-solid fa-magnifying-glass text-white hover:scale-105"></i></div>
 
           <div class="text-white">
-            Recent<i class="fa-solid fa-list text-white ml-2"></i>
+            Recent<i class="fa-solid fa-list text-white ml-2 hover:scale-105"></i>
           </div>
+        </div>
+        <!-- song suggestions -->
+        <div class="h-116 overflow-y-auto overflow-x-hidden ">
+          <ul>
+            <li  class=" h-15 flex items-center  ">
+              <div class=" hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                <i class="fa-solid fa-heart text-red-500 text-2xl bg-white p-2 rounded-full ml-2"></i> <span class="flex-col ml-3 text text-white hover:text-green-500"></span></div>
+                 <div>
+                  <span class=" flex text-white ml-6 "><h2>Liked Songs</h2> </span>
+                  <span ><i class="fa-solid fa-thumbtack hover:text-green-500 text-white mr-2 rotate-45"></i></span>
+                  <span class="text-white hover:text-green-500 text-sm "> playlist. 38 songs</span>
+                 </div>
+                
+              
+            </li>
+            <li  class=" h-15 flex p-2 hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xFo84BikRdYIsg1NTX1a_xAu8rbcFaW6xw&s)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Ninja</h2>
+                 <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class="  h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white flex flex-col justify-center">
+                <h2 class="">Arijit singh</h2>
+                 <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/3w6KyMJAlxuBwfsWeQEW_UVdSBJ3PaEJCCPSZOvCMI6dUC2TvNqH6hmWfmbM5UUQy1BkZWedjw=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Arman malik</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://i1.sndcdn.com/avatars-GBhEb4pyHIRKyPfO-9aDwAw-t240x240.jpg)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Shubh</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVN3D0So-n38ssvzjoMKgqDECSjiCOED3vVQ&s)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Diljit Dosanjh</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://i.scdn.co/image/ab6761610000e5ebdbcc4ab55ee0cb7dd9a1a0bf)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Mankrith aulak</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoDfrA7JJl8XtB-MnhJB8qsmjTfN4JBwtoQ&s)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Gurnazar</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://static.toiimg.com/thumb/imgsize-23456,msid-115474560,width-600,resizemode-4/115474560.jpg)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>A.R Rehman</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/cI3RMhRcDJQg73GEBVYxW6rLZwIq_n5qZyE8IhUM6zJF5WOVpYPyEN2avZMF-2TDtCIFr9qogW4=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Sunidhi Chauhan</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/ad/c5/e8/adc5e88c-d2f5-96ee-fff8-ed4c151f51d4/mzl.vwqefurf.jpg/486x486bb.png)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Imran khan</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+              <div class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/ytc/AIdro_kiQJ0Hhp0O-tdaY1dy81-gSNujjccUlWstnpFr686ZlMk=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Sidhu moosewala</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+
+
+            <li  class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105  ">
+              <div class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmMiQvRKCXYcQS8u3iG23AD7c9_BYRhmngw&s)] h-11 w-11 bg-cover rounded-full"></div>
+              <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                <h2>Karan aujhla</h2>
+                  <p class="font-thin">Artist</p>
+              </div>
+            </li>
+            
+          </ul>
         </div>
       </div>
       <!-- main -->
-      <div class="bg-[#121212] flex flex-1 rounded-2xl"></div>
+      <div class="bg-[#121212] flex-1 rounded-2xl">
+        <!-- buttons -->
+        <div class="p-3 ">
+          <!-- all -->
+          <span class="ml-1">
+            <button
+              class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105"
+            >
+              <b>All</b>
+            </button>
+          </span>
+          <!-- music -->
+             <span class="ml-1">
+              <button
+              class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105"
+            >
+              <b>Music</b>
+            </button>
+          </span>
+          <!-- podcast -->
+           <span class="ml-1">
+            <button
+              class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105"
+            >
+              <b>Podcast</b>
+            </button>
+          </span>
+        </div>
+        <!-- name -->
+        <h2 class="text-white text-3xl p-4">Made For Devansh dayama</h2>
+        <!-- song pics -->
+         <!-- row-1 -->
+         <div class=" w-220 h-52 mb-7 ml-4 flex "> 
+          <!-- first pic -->
+          <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Pritam,Vishal</b></h2>
+        </div>
+        <!-- 2nd pic -->
+          <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab67616d0000b2731344800458a38197bfc721f3)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Jhol</b></h2>
+           <h2 class="text-sm text-white ml-3">Maanu,Annural khalid</h2>
+        </div>
+        <!-- 3rd pic -->
+        <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://c.saavncdn.com/915/Raanjhan-From-Do-Patti-Hindi-2024-20241004153945-500x500.jpg)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Raanjhan(From"Do Patti")</b></h2>
+           <h2 class="text-sm text-white ml-3">Sachet-parampara</h2>
+        </div>
+        <!-- 4th pic -->
+         <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://filmfare.wwmindia.com/content/2025/feb/sanamterikasam241739595582.jpg)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Sanam Teri Kasam (Original Motion...</b></h2>
+           <h2 class="text-sm text-white ml-3">Himesh Reshammiya,</h2>
+
+        </div>
+        <!-- 5th pic -->
+        <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Glory</b></h2>
+           <h2 class="text-sm text-white ml-3">Yo Yo Honey Singh</h2>
+        </div>
+         </div>
+         <!-- row-2 -->
+         <div class=" w-220 h-50 ml-4 flex">
+           <!-- first pic -->
+          <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://m.media-amazon.com/images/S/pv-target-images/f660a95899f7324b8593291348f78f551f32c1a40304042a43195ca71eb92931.jpg)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Aashiqui 2</b></h2>
+            <h2 class="text-sm text-white ml-3">mithoon,Ankit Tiwari,Jeet Gannguli</h2>
+        </div>
+        <!-- 2nd pic -->
+          <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0AI7WzJ8FuT0U4Di2jUSoeKNAfX_ccDNCA&s)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Diljit Dosanjh</b></h2>
+           <h2 class="text-sm text-white ml-3">Meet Bros, Bilal Saeed an....</h2>
+        </div>
+        <!-- 3rd pic -->
+        <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://blackhattalent.com/wp-content/uploads/2024/07/Neha-Kakkar1.jpeg)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Neha Kakkar</b></h2>
+           <h2 class="text-sm text-white ml-3">Tony kakkar,Yo Yo Honey Singh</h2>
+        </div>
+        <!-- 4th pic -->
+         <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://c.ndtvimg.com/2024-11/ee81sve_hilarious-indian-mom-logics-on-diets-a-reel-by-rj-karishma_625x300_15_November_24.jpg)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b></b></h2>
+           <h2 class="text-sm text-white ml-3">Naye India gaano ka khazana, featuring..... </h2>
+
+        </div>
+        <!-- 5th pic -->
+        <div class="p-3 ">
+            <div class="h-35 w-38 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TWkW0HnFTkU7AlgRPbwtTIKrv3nuTAKPlw&s)] bg-cover">
+          </div>
+           <h2 class="text-white font-minbold mt-2 ml-3"><b>Badshah</b></h2>
+           <h2 class="text-sm text-white ml-3">Yo Yo Honey Singh Colab</h2>
+        </div>
+         </div>
+      </div>
       <!-- rightsidebar -->
-      <div class="bg-[#121212] w-64 rounded-2xl mr-2"></div>
+      <div class="bg-[#121212] w-64 rounded-2xl mr-2 ">
+        <div class="flex">
+          <div class="p-3 ">
+          <span>
+           <button
+              class=" text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105"
+            >love  <i class="fas fa-heart text-red-500"></i></button>
+        </span>
+        </div>
+        <div class="p-6 ml-11">
+          <span><i class="fa-solid fa-ellipsis text-white ml-4 hover:scale-105"></i></span>
+          <span><i class="fa-solid fa-up-right-and-down-left-from-center text-white text-xs ml-8 ml-1 hover:scale-105"></i></span>
+        </div>
+        </div>
+        
+        <!-- pic -->
+         <div>
+       <div class="bg-blue-400 h-105 rounded-2xl w-57 ml-3.5 bg-[url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jab-we-met-et00000182-1681714389.jpg)] bg-cover "> </div>
+       <div class="flex">
+         <div>
+        <h2 class="text-white font-minbold mt-2 ml-4 text-3xl"><b>Tum Se Hi</b></h2>
+        <h2 class="text-sm text-white ml-4">Pritam,Mohit Chauhan,Irs </h2>
+      </div>
+      <i class="fa-solid fa-upload text-white mt-8 ml-6 hover:scale-110"></i>
+      <span class="bg-green-500 rounded-full w-4 h-4 flex justify-center items-center text-xs mt-8 ml-3 hover:scale-110"><i class="fa-solid fa-check"></i>
+      </span>
+       </div>
+        
+
+      
+       </div>
+      </div>
+      
     </div>
     <!-- playbar -->
     <div class="h-15 bg-blue-400"></div>
