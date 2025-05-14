@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Google_Classroom_Logo.svg/2372px-Google_Classroom_Logo.svg.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Classroom</title>
+  </head>
+  <body class="">
+    <!-- navbar -->
+    <div class="h-16 w-full  flex border-b-1 justify-between border-gray-400">
+        <div class="flex">
+      <!-- left design -->
+      <i class="fa-solid fa-bars text-gray-600 text-xl ml-5 mt-6"></i>
+      <div
+        class="h-8 w-9 ml-6 mt-4 bg-[url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Google_Classroom_Logo.svg/2372px-Google_Classroom_Logo.svg.png)] bg-cover text-l"
+      ></div>
+      <h2 class="text-xl text-slate-600 ml-3 mt-4.25">Classroom</h2></div>
+      <!-- right design -->
+      <div class=" items-center flex gap-5">
+        <i class="fas fa-plus text-gray-600 text-xl mr-2"></i>
+        <i class="fa-solid fa-bars text-gray-600 text-xl"></i>
+        <div
+          class="bg-green-600 h-10 w-10 rounded-full flex items-center justify-center border-3 text border-gray-400 font-bold"
+        >
+          D
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-12  h-166 ">
+     <!-- SIDEBAR -->
+        <div class="  col-span-2 border-r-1 boder border-gray-400 ">
+        <!-- 1st div -->
+        <div class="border-b-1 border-gray-400">
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i class="fas fa-home text-gray-600 ml-2.75 mt-1.5"></i>
+            <span class="mt-0.5 ml-5">Home</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i
+              class="fas far fas far fa-calendar text-gray-600 ml-3 mt-1.5"
+            ></i>
+            <span class="mt-0.5 ml-5">Calendar</span>
+          </div>
+        </div>
+        <!-- 2nd div -->
+        <div class="border-b-1 border-gray-400">
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i
+              class="fas fas fa-graduation-cap text-gray-600 ml-2.5 mt-1.5"
+            ></i>
+            <span class="mt-0.5 ml-5">Enrolled</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i class="fa-solid fa-table-list text-gray-600 ml-3 mt-1.5"></i>
+            <span class="mt-0.5 ml-6"> To-do</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl flex">
+            <div
+              class="h-8 w-8 ml-1 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold"
+            >
+              F
+            </div>
+            <span class="ml-5.5 mt-1">Frontend BATCH - A</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl flex">
+            <div
+              class="h-8 w-8 ml-1 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold"
+            >
+              T
+            </div>
+            <span class="ml-5.5 mt-1">TCS NQT</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl flex">
+            <div
+              class="h-8 w-8 ml-1 bg-green-600 rounded-full flex items-center justify-center text-white font-semibold"
+            >
+              L
+            </div>
+            <span class="ml-5.5 mt-1">Linux / Git - 3 Mar</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl flex">
+            <div
+              class="h-8 w-8 ml-1 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold"
+            >
+              C
+            </div>
+            <span class="ml-5.5 mt-1">C LOGICAL BATCH -A25</span>
+          </div>
+        </div>
+        <!-- 3rd div -->
+
+        <div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i class="far fa-calendar-check text-gray-600 ml-3 mt-1.5"></i>
+            <span class="mt-0.5 ml-5">Archived CLasses</span>
+          </div>
+          <div class="hover:bg-blue-200 p-2 rounded-r-2xl">
+            <i class="fa-solid fa-gear text-gray-600 ml-3 mt-1.5"></i>
+            <span class="mt-0.5 ml-5">Settings</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="  grid  grid-cols-10 gap-5 p-5 overflow-y-auto h-[92vh] w-[82vw]  m:col-span-10 md:col-span-10 lg:col-span-10" >
+    
+        <div class=" h-70   col-span-8 sm:col-span-4 md:col-span-3 rounded-xl hover:scale-105 hover:cursor-pointer  relative border border-gray-400">
+            <div class="h-20 bg-[url('https://gstatic.com/classroom/themes/img_bookclub.jpg')] bg-cover rounded-t-xl relative"><div class="flex justify-between p-2 text-lg font-bold ">
+                <span class=" text-white  "><h2><u>Frontend BATCH - A</u></h2></span>
+                <i class="fa-solid fa-ellipsis-vertical text-white mr-3 mt-2 "></i>
+            </div>
+            <div class="p-1 ml-1.5 text-white text-semibold hover:underline">REGex Software</div>
+            </div>
+            <span class="absolute h-18 w-18 bg-green-800 rounded-full right-4.75 top-9 text-white font-semibold flex items-center justify-center text-4xl">R</span>
+            <div class="h-35 border-b-1 border-gray-400 "></div>
+            <div class=" h-15  rounded-b-xl"><div class="flex justify-end gap-7 mr-4.5 mt-4.5 text-xl"><i class="fa-solid fa-id-badge"></i><i class="fa-regular fa-file"></i></div></div>
+    </div>
+        <div class=" h-70   col-span-8 sm:col-span-4 md:col-span-3 rounded-xl hover:scale-105 hover:cursor-pointer  relative border border-gray-400">
+            <div class="h-20 bg-[url('https://gstatic.com/classroom/themes/img_bookclub.jpg')] bg-cover rounded-t-xl relative"><div class="flex justify-between p-2 text-lg font-bold ">
+                <span class=" text-white  "><h2><u>TCS NQT</u></h2></span>
+                <i class="fa-solid fa-ellipsis-vertical text-white mr-3 mt-2 "></i>
+            </div>
+            <div class="p-1 ml-1.5 text-white text-semibold hover:underline">REGex Software</div>
+            </div>
+            <span class="absolute h-18 w-18 bg-green-800 rounded-full right-4.75 top-9 text-white font-semibold flex items-center justify-center text-4xl">R</span>
+            <div class="h-35 border-b-1 border-gray-400 "></div>
+            <div class=" h-15  rounded-b-xl"><div class="flex justify-end gap-7 mr-4.5 mt-4.5 text-xl"><i class="fa-solid fa-id-badge"></i><i class="fa-regular fa-file"></i></div></div>
+    </div>
+     <div class=" h-70   col-span-8 sm:col-span-4 md:col-span-3 rounded-xl hover:scale-105 hover:cursor-pointer  relative border border-gray-400">
+            <div class="h-20 bg-[url('https://www.gstatic.com/classroom/themes/img_backtoschool.jpg')] bg-cover rounded-t-xl relative"><div class="flex justify-between p-2 text-lg font-bold ">
+                <span class=" text-white  "><h2><u>Linux /Git - 3</u></h2></span>
+                <i class="fa-solid fa-ellipsis-vertical text-white mr-3 mt-2 "></i>
+            </div>
+            <div class="p-1 ml-1.5 text-white text-semibold hover:underline">REGex Software</div>
+            </div>
+            <span class="absolute h-18 w-18 bg-green-800 rounded-full right-4.75 top-9 text-white font-semibold flex items-center justify-center text-4xl">R</span>
+            <div class="h-35 border-b-1 border-gray-400 "></div>
+            <div class=" h-15  rounded-b-xl"><div class="flex justify-end gap-7 mr-4.5 mt-4.5 text-xl"><i class="fa-solid fa-id-badge"></i><i class="fa-regular fa-file"></i></div></div>
+    </div>
+     <div class=" h-70   col-span-8 sm:col-span-4 md:col-span-3 rounded-xl hover:scale-105 hover:cursor-pointer  relative border border-gray-400">
+            <div class="h-20 bg-[url('https://gstatic.com/classroom/themes/img_bookclub.jpg')] bg-cover rounded-t-xl relative"><div class="flex justify-between p-2 text-lg font-bold ">
+                <span class=" text-white  "><h2><u>C LOGICAL BATCH A25</u></h2></span>
+                <i class="fa-solid fa-ellipsis-vertical text-white mr-3 mt-2 "></i>
+            </div>
+            <div class="p-1 ml-1.5 text-white text-semibold hover:underline">REGex Software</div>
+            </div>
+            <span class="absolute h-18 w-18 bg-green-800 rounded-full right-4.75 top-9 text-white font-semibold flex items-center justify-center text-4xl">R</span>
+            <div class="h-35 border-b-1 border-gray-400 "></div>
+            <div class=" h-15  rounded-b-xl"><div class="flex justify-end gap-7 mr-4.5 mt-4.5 text-xl"><i class="fa-solid fa-id-badge"></i><i class="fa-regular fa-file"></i></div></div>
+    </div>
+        
+       
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
