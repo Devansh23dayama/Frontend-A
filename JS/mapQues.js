@@ -193,7 +193,7 @@ console.log(updatedList);
 
 const ids = ['EMP001', 'EMP002'];
 const employeesIds = ids.map(emp => `Employee Code: ${emp}`);
-console.log(employeesIds);
+console.log(employeesIds); 
 
 
 /* 22. Generate Work Email IDs
