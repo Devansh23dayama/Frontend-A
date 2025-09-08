@@ -5,7 +5,7 @@ import Footer from './Footer';
 import styles from './App.module.css';
 
 function App() {
-  // Data structure designed for easy API integration
+
   const personalInfo = {
     name: 'Devansh Dayama',
     title: 'Full-Stack Java Developer',
