@@ -4,22 +4,28 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Body from './Body'
-
+import Footer from './Footer'
+import NotFound from './NotFound'
+import Home from './Home'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
 
 
-  const message = {
-    name:'devansh',
-    age:23,
-    gender:male
-  }
-
   
   return (
     <>
-     <Header anyword={message}/>
-     <Body anyword={message}/>
+    <BrowserRouter>
+   <Header/>
+    <Routes>
+       <Route path='/' element={<Home/>}/>
+       <Route path='/contact' element={<Body/>}/>
+       <Route path='/Footer' element={<Footer/>}/>
+          <Route path='*' element={<NotFound/>}/>
+      
+    </Routes>
+    </BrowserRouter>
+    
     </>
   )
 }
