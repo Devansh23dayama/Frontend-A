@@ -7,6 +7,8 @@ import Body from './Body'
 import Footer from './Footer'
 import NotFound from './NotFound'
 import Home from './Home'
+import Counter from './Counter'
+
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
@@ -19,9 +21,12 @@ function App() {
    <Header/>
     <Routes>
        <Route path='/' element={<Home/>}/>
-       <Route path='/contact' element={<Body/>}/>
+       <Route path='/Body' element={<Body/>}/>
        <Route path='/Footer' element={<Footer/>}/>
-          <Route path='*' element={<NotFound/>}/>
+       <Route path='/Counter' element={<Counter/>}/>
+       <Route path='*' element={<NotFound/>}/>
+
+
       
     </Routes>
     </BrowserRouter>
