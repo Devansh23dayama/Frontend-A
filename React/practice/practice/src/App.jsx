@@ -8,6 +8,7 @@ import Footer from './Footer'
 import NotFound from './NotFound'
 import Home from './Home'
 import Counter from './Counter'
+import Form from './Form'
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
@@ -24,6 +25,7 @@ function App() {
        <Route path='/Body' element={<Body/>}/>
        <Route path='/Footer' element={<Footer/>}/>
        <Route path='/Counter' element={<Counter/>}/>
+         <Route path='/Form' element={<Form/>}/>
        <Route path='*' element={<NotFound/>}/>
 
 
